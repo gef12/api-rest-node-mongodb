@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 require('./controllers/authController')(app);
 
 app.get('/', (req, res) => {
-    res.send('OK 2');
+    res.send('OK blz');
 });
 
 app.listen(3000);
