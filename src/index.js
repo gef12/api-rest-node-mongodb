@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({extended: false}));
 
-require('../src/app/controllers/index')(app);
+require('./app/controllers/index')(app);
 
 app.get('/', (req, res) => {
     res.send('OK blz');
